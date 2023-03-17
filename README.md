@@ -14,6 +14,9 @@
   limitations under the License.
 -->
 
+> **Note:** This is a fork of the original repository maintained by [Ayogo Health](https://github.com/AyogoHealth/cordova-plugin-oauth). 
+> Trustly has made minor changes to this plugin in order to simplify compatibility with the Trustly Lightbox UI components. If you are building a Trustly integration, be sure your app uses this fork rather than the original plugin.
+
 cordova-plugin-oauth
 ====================
 
@@ -27,7 +30,7 @@ falling back to Safari.
 On Android, this uses Custom Tabs in the user's preferred web application,
 falling back to their browser.
 
-**Note:** This plugin might conflict with the Cordova In-App Browser plugin!
+**Warning:** This plugin might conflict with the Cordova In-App Browser plugin!
 
 > ℹ️ **This plugin uses AndroidX!**
 >
@@ -38,7 +41,7 @@ Installation
 ------------
 
 ```
-cordova plugin add cordova-plugin-oauth [--variable URL_SCHEME=mycoolapp]
+cordova plugin add https://github.com/TrustlyInc/cordova-plugin-oauth --variable URL_SCHEME=mycoolapp
 ```
 
 By default, the plugin registers the app ID as a scheme to be used as the
